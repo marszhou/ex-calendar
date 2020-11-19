@@ -35,7 +35,7 @@ body {
   background: #2b4450;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  height: 501px;
+
   perspective: 1000;
   transition: 0.9s;
   transform-style: preserve-3d;
@@ -104,18 +104,20 @@ body {
   border-radius: 50%;
 }
 
-.weeks span:not(.last-month):hover {
+.weeks span:hover {
   cursor: pointer;
   font-weight: 600;
 }
 
-.event {
+.event,
+.today {
   position: relative;
 }
 
-.event:after {
+.event:after,
+.today:after {
   content: '•';
-  color: #f78536;
+  color: #3673f7;
   font-size: 1.4em;
   position: absolute;
   right: -4px;
