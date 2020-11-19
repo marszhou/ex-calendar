@@ -26,8 +26,7 @@ body {
   display: flex;
   height: 100%;
   justify-content: center;
-  margin: 0 auto;
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
 }
 
@@ -52,7 +51,7 @@ body {
   border-bottom: 1px solid rgba(73, 114, 133, 0.6);
   display: flex;
   justify-content: center;
-  padding: 30px 40px;
+  padding: 10px 10px;
 }
 
 .current-date h1 {
@@ -87,7 +86,7 @@ body {
   font-size: 1.2em;
   font-weight: 300;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   width: 100%;
 }
 
@@ -96,7 +95,7 @@ body {
 }
 
 .weeks span {
-  padding: 10px;
+  padding: 4px;
 }
 
 .weeks span.active {
@@ -223,7 +222,7 @@ body {
   width: 0px;
   height: 0px;
   border-style: solid;
-  top: 45px;
+  top: 25px;
   margin-top: -7.5px;
   cursor: pointer;
 }

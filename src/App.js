@@ -1,5 +1,6 @@
 import Calendar from './components/calendar'
 import React from 'react'
+import CalendarInput from './components/calendar/CalendarInput'
 class App extends React.Component {
   state = {
     date: '2020-11-08',
@@ -7,8 +8,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Calendar
+      <div
+        className="App"
+        style={{ position: 'absolute', left: 100, top: 200 }}
+      >
+        <CalendarInput
           value={this.state.date}
           onChange={(newDate) =>
             this.setState({
@@ -16,6 +20,16 @@ class App extends React.Component {
             })
           }
         />
+        {/**
+           <Calendar
+          value={this.state.date}
+          onChange={(newDate) =>
+            this.setState({
+              date: newDate,
+            })
+          }
+        />
+           */}
       </div>
     )
   }
