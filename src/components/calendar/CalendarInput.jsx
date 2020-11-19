@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Calendar from '.'
-import Popup from './Popup'
+import Popup from '../../Popup'
 
 class CalendarInput extends Component {
   state = {
